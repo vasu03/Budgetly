@@ -5,7 +5,7 @@ import { SignIn } from "@clerk/nextjs";
 const page = () => {
     // TSX to render the page
     return (
-        <SignIn />
+        <SignIn forceRedirectUrl="/" />
     );
 };
 

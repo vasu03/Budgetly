@@ -4,7 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google"; 	// Import Google Fonts fo
 import "./globals.css"; 								// Global CSS file for styling
 
 // Importing custom and pre-defined providers
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs";
 import RootProviders from "@/components/providers/RootProviders";
 
 // Define custom font configurations using next/font/google
@@ -20,25 +20,25 @@ const geistMono = Geist_Mono({
 
 // Define metadata for the application
 export const metadata: Metadata = {
-	title: "Budgetly", 									
-	description: "Track and manage your budget with ease.", 
+	title: "Budgetly",
+	description: "Track and manage your budget with ease.",
 };
 
 // RootLayout component: wraps the application with common layouts and providers
 export default function RootLayout({
 	children,
 }: Readonly<{
-	children: React.ReactNode; 
+	children: React.ReactNode;
 }>) {
 	return (
 		<ClerkProvider>
-			<html lang="en" className="dark" style={{ colorScheme: "dark" }} >
+			<html lang="en" className="dark" style={{ colorScheme: "dark" }} suppressHydrationWarning>
 				<head>
 					<title>Budgetly</title>
 					<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 				</head>
 				<body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
-					<RootProviders>{children}</RootProviders>
+						<RootProviders>{children}</RootProviders>
 				</body>
 			</html>
 		</ClerkProvider>
