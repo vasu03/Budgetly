@@ -6,6 +6,7 @@ import "./globals.css"; 								// Global CSS file for styling
 // Importing custom and pre-defined providers
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs";
 import RootProviders from "@/components/providers/RootProviders";
+import { Toaster } from "@/components/ui/sonner";
 
 // Define custom font configurations using next/font/google
 const geistSans = Geist({
@@ -38,6 +39,7 @@ export default function RootLayout({
 					<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 				</head>
 				<body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+					<Toaster richColors position="top-right" />
 						<RootProviders>{children}</RootProviders>
 				</body>
 			</html>

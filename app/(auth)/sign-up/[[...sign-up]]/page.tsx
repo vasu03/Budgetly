@@ -5,7 +5,7 @@ import { SignUp } from "@clerk/nextjs";
 const page = () => {
     // TSX to render the page
     return (
-        <SignUp />
+        <SignUp forceRedirectUrl={"/wizrad"}/>
     );
 };
 
