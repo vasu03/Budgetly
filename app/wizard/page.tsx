@@ -30,7 +30,7 @@ const page = async () => {
             {/* Container to show Welcome Text */}
             <h1 className="text-center text-xl md:text-3xl">
                 Welcome aboard,
-                <span className="ml-1 bg-gradient-to-r from-teal-500 via-pink-300 to-cyan-400 bg-clip-text text-2xl md:text-4xl font-bold leading-tight tracking-tighter text-transparent" >
+                <span className="ml-1 bg-gradient-to-r from-teal-500 via-pink-300 to-cyan-400 bg-clip-text text-2xl md:text-4xl font-semibold leading-tight tracking-tighter text-transparent" >
                     {currUser.firstName}
                 </span> !
             </h1>

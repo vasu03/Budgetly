@@ -10,7 +10,7 @@ const Logo = () => {
     return (
         <a href="/" className="flex items-center gap-2" aria-label="Home">
             <Wallet className="h-8 w-8 stroke stroke-teal-400 stroke-[1.5]" />
-            <span className="bg-gradient-to-r from-teal-500 via-pink-300 to-cyan-400 bg-clip-text text-3xl font-bold leading-tight tracking-tighter text-transparent" >
+            <span className="bg-gradient-to-r from-teal-500 via-pink-300 to-cyan-400 bg-clip-text text-3xl font-semibold leading-tight tracking-tight text-transparent" >
                 Budgetly
             </span>
         </a>
@@ -22,7 +22,7 @@ export const LogoMobile = () => {
     // TSX to render our Logo component
     return (
         <a href="/" className="flex items-center gap-2" aria-label="Home">
-            <span className="bg-gradient-to-r from-teal-500 via-pink-300 to-cyan-400 bg-clip-text text-2xl font-bold leading-tight tracking-tighter text-transparent" >
+            <span className="bg-gradient-to-r from-teal-500 via-pink-300 to-cyan-400 bg-clip-text text-2xl font-semibold leading-tight tracking-tight text-transparent" >
                 Budgetly
             </span>
         </a>

@@ -46,7 +46,7 @@ const navLinks = [
 const DesktopNavbar = () => {
     // TSX to render the Navabr for Desktop screens 
     return (
-        <div className="hidden border-separate border-b bg-background md:block" >
+        <div className="hidden border-separate border-b border-gray-900 bg-background md:block" >
             <nav className="container flex items-center justify-between px-6 py-2">
                 {/* Logo for the app */}
                 <div className="flex items-center justify-center gap-x-3">
@@ -121,8 +121,8 @@ const NavbarLink = ({ label, path, onClickCallback }: { label: string, path: str
                 href={path}
                 className={cn(
                     buttonVariants({ variant: "ghost" }),
-                    "w-full py-2 px-3 justify-start text-base text-muted-foreground hover:text-cyan-300",
-                    isActivePath && "text-teal-300"
+                    "w-full py-2 px-3 font-light justify-start text-sm tracking-wider text-muted-foreground hover:text-cyan-300",
+                    isActivePath && "text-teal-300 font-medium"
                 )}
                 onClick={() => { if (onClickCallback) onClickCallback() }}
             >
