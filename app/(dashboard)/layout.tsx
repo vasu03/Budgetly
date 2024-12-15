@@ -9,7 +9,7 @@ const layout = ({ children }: { children: ReactNode }) => {
 
     // TSX to render the layout
     return (
-        <div className="relative w-full-h-screen flex flex-col">
+        <div className="relative w-full h-screen flex flex-col">
             {/* Render the Navbar component */}
             <Navbar />
             {/* Render the Dashboard Page */}

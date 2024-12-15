@@ -26,10 +26,10 @@ const Navbar = () => {
 
     // TSX to render the Navbar component
     return (
-        <>
+        <div className="flex w-full">
             <DesktopNavbar />
             <MobileNavbar />
-        </>
+        </div>
     );
 };
 
@@ -46,8 +46,8 @@ const navLinks = [
 const DesktopNavbar = () => {
     // TSX to render the Navabr for Desktop screens 
     return (
-        <div className="hidden border-separate border-b border-gray-900 bg-background md:block" >
-            <nav className="container flex items-center justify-between px-6 py-2">
+        <div className="hidden w-full border-b border-gray-900 bg-background md:block" >
+            <nav className="w-full flex items-center justify-between px-6 py-2">
                 {/* Logo for the app */}
                 <div className="flex items-center justify-center gap-x-3">
                     <Logo />
@@ -78,8 +78,8 @@ const MobileNavbar = () => {
 
     // TSX to render the Navbar for Mobile screens
     return (
-        <div className="block bg-background md:hidden pb-3 px-1" >
-            <nav className="container flex items-center justify-between p-1 gap-1 " >
+        <div className="flex !w-full bg-background md:hidden pb-3 px-1" >
+            <nav className="flex !w-full items-center justify-between p-1 gap-1 " >
                 <Sheet open={isOpen} onOpenChange={setIsOpen} >
                     <SheetTrigger asChild >
                         <AlignLeftIcon className="size-5" />
@@ -94,7 +94,7 @@ const MobileNavbar = () => {
                         </div>
                     </SheetContent>
                 </Sheet>
-                <div className="flex items-center flex-1 justify-between px-2">
+                <div className="flex w-full items-center flex-1 justify-between px-2">
                     <LogoMobile />
                     <div className="flex items-center gap-1">
                         <SwitchTheme />

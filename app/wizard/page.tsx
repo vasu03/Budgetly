@@ -22,7 +22,7 @@ const page = async () => {
 
     // TSX to render the Page
     return (
-        <div className="container w-[90%] md:max-w-2xl flex flex-col items-center justify-between gap-2" >
+        <div className="w-[90%] md:max-w-2xl flex flex-col items-center justify-between gap-2" >
             <div className="mb-4 flex items-center justify-center">
                 <Logo />
             </div>
