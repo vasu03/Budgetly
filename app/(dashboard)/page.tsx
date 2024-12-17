@@ -7,6 +7,7 @@ import prisma from "@/lib/prisma";
 // Importing  custom components
 import CreateTransactionDialog from "./_components/CreateTransactionDialog";
 import Overview from "./_components/Overview";
+import History from "./_components/History";
 
 // Creating a Page for our Dashboard
 const page = async () => {
@@ -62,8 +63,11 @@ const page = async () => {
                 </div>
             </div>
 
-            {/* Overview information container */}
+            {/* Overview information Component */}
             <Overview userSettings={userSettings} />
+
+            {/* History Chart component */}
+            <History userSettings={userSettings} />
         </div>
     );
 };
