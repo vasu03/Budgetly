@@ -38,7 +38,7 @@ const Navbar = () => {
 const navLinks = [
     { label: "Dashboard", path: "/" },
     { label: "Transactions", path: "/transactions" },
-    { label: "Manage", path: "/manage" },
+    { label: "Settings", path: "/settings" },
 ];
 
 

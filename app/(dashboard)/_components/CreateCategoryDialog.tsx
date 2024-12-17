@@ -96,8 +96,8 @@ const CreateCategoryDialog = ({ type, successCallback }: Props) => {
         <Dialog open={isOpen} onOpenChange={setIsOpen} >
             {/* To open a dialog box for creating a new Category */}
             <DialogTrigger asChild>
-                <Button variant={"ghost"} className="flex border-separate items-center justify-start rounded-none border-b p-3 text-muted-foreground" >
-                    <PlusSquare className="mr-2 h-4 w-4" /> New category
+                <Button variant={"ghost"} className="flex rounded-md items-center justify-evenly border px-3 text-xs md:text-sm text-muted-foreground " >
+                    <PlusSquare className="" /> New category
                 </Button>
             </DialogTrigger>
             {/* Content of triggered Dialog box */}

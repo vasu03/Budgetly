@@ -83,8 +83,8 @@ const CurrencyList = () => {
         return (
             <SkeletonWrapper isLoading={userSettings.isFetching} fullWidth >
                 <Popover open={open} onOpenChange={setOpen}>
-                    <PopoverTrigger asChild>
-                        <Button variant="outline" className="w-[150px] justify-start" disabled={mutation.isPending}>
+                    <PopoverTrigger asChild className="w-full border">
+                        <Button variant="outline" className="w-full justify-start" disabled={mutation.isPending}>
                             {selectedOption ? <>{selectedOption.label}</> : <>▼ Set Currency</>}
                         </Button>
                     </PopoverTrigger>
@@ -102,7 +102,7 @@ const CurrencyList = () => {
         <SkeletonWrapper isLoading={userSettings.isFetching} fullWidth >
             <Drawer open={open} onOpenChange={setOpen}>
                 <DrawerTrigger asChild>
-                    <Button variant="outline" className="w-[150px] justify-start" disabled={mutation.isPending}>
+                    <Button variant="outline" className="w-full justify-start" disabled={mutation.isPending}>
                         {selectedOption ? <>{selectedOption.label}</> : <>▼ Set Currency</>}
                     </Button>
                 </DrawerTrigger>
