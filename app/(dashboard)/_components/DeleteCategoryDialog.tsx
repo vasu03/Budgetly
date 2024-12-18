@@ -31,7 +31,7 @@ const DeleteCategoryDialog = ({ trigger, category }: Props) => {
     // Making an API mutation call to create the category
     const deleteCategoryMutation = useMutation({
         mutationFn: DeleteCategory,
-        onSuccess: async (data: Category) => {
+        onSuccess: async () => {
 
             toast.success("Category deleted successfully.", {
                 id: "delete-category"
@@ -55,7 +55,7 @@ const DeleteCategoryDialog = ({ trigger, category }: Props) => {
             <AlertDialogContent>
                 <AlertDialogHeader>
                     <AlertDialogTitle>Are you sure to delete {category.name} category?</AlertDialogTitle>
-                    <AlertDescription className="text-muted-foreground text-sm" >The effects of this action can't be undone. Your category will be deleted permanantly.</AlertDescription>
+                    <AlertDescription className="text-muted-foreground text-sm" >The effects of this action can not be undone. Your category will be deleted permanantly.</AlertDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>

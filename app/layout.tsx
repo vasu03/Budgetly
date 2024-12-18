@@ -4,7 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google"; 	// Import Google Fonts fo
 import "./globals.css"; 								// Global CSS file for styling
 
 // Importing custom and pre-defined providers
-import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 import RootProviders from "@/components/providers/RootProviders";
 import { Toaster } from "@/components/ui/sonner";
 

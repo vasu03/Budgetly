@@ -1,5 +1,4 @@
 // Importing required modules
-import { z } from "zod";
 import prisma from "@/lib/prisma";
 import { redirect } from "next/navigation";
 import { currentUser } from "@clerk/nextjs/server";

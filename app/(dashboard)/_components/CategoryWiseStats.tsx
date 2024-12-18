@@ -2,9 +2,8 @@
 "use client";
 
 // Impotring required modules
-import React, { ReactNode, useCallback, useMemo } from "react";
+import React, { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { cn } from "@/lib/utils";
 
 // Importing custom data type
 import { UserSettings } from "@prisma/client";

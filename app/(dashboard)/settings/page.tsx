@@ -22,7 +22,7 @@ import DeleteCategoryDialog from "../_components/DeleteCategoryDialog";
 
 
 // Creating our Settings Page
-const page = () => {
+const Page = () => {
     // TSX to render the page
     return (
         <>
@@ -144,4 +144,4 @@ const CategoryCard = ({ category }: { category: Category }) => {
 };
 
 // Exporting our Settings page
-export default page;
+export default Page;

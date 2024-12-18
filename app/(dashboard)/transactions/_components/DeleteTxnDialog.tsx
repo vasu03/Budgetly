@@ -6,7 +6,7 @@ import React from "react";
 
 // Importing pre-defined UI components
 import { toast } from "sonner";
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 // Importing custom api action functions for making API calls
@@ -51,7 +51,7 @@ const DeleteTxnDialog = ({ open, setOpen, txnId }: Props) => {
             <AlertDialogContent>
                 <AlertDialogHeader>
                     <AlertDialogTitle>Are you sure to delete this transaction</AlertDialogTitle>
-                    <AlertDialogDescription className="text-muted-foreground text-sm" >The effects of this action can't be undone. Your transaction will be deleted permanantly.</AlertDialogDescription>
+                    <AlertDialogDescription className="text-muted-foreground text-sm" >The effects of this action can not be undone. Your transaction will be deleted permanantly.</AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>

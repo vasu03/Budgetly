@@ -68,7 +68,7 @@ const CreateTransactionDialog = ({ trigger, type }: Props) => {
     const queryClient = useQueryClient();
 
     // Making an API mutation call to create the category
-    const { mutate, isPending, error } = useMutation({
+    const { mutate, isPending } = useMutation({
         mutationFn: CreateTransaction,
         onSuccess: async () => {
             toast.success(`Transaction created successfully.`, {
@@ -143,7 +143,7 @@ const CreateTransactionDialog = ({ trigger, type }: Props) => {
                             <FormField
                                 control={form.control}
                                 name="category"
-                                render={({ field }) => (
+                                render={() => (
                                     <FormItem className="flex flex-col">
                                         <FormLabel>Category<span className="text-rose-400 mr-2"> *</span></FormLabel>
                                         <FormControl>

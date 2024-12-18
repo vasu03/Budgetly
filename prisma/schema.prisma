@@ -47,21 +47,23 @@ model Transaction {
 
 // Defining the structure of Month History Table
 model MonthHistory {
-  userId String
-  day Int
-  month Int
-  year Int
-  income Float
+  userId  String
+  day     Int
+  month   Int
+  year    Int
+  income  Float
   expense Float
+
   @@id([day, month, year, userId])
 }
 
 // Defining the structure of Year History Table
 model YearHistory {
-  userId String
-  month Int
-  year Int
-  income Float
+  userId  String
+  month   Int
+  year    Int
+  income  Float
   expense Float
+
   @@id([month, year, userId])
 }

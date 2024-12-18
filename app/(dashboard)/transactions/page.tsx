@@ -16,9 +16,9 @@ import { MAX_DATE_RANGE_DAYS } from "@/lib/constants";
 import TransactionsTable from "./_components/TransactionsTable";
 
 // Creating our Transactions page
-const page = () => {
+const Page = () => {
     // Some states to handle the data & manage to working of component
-    const [dateRange, setDateRange] = useState<{ from: Date; to: Date }>({
+    const [dateRange, setDateRange] = React.useState<{ from: Date; to: Date }>({
         from: startOfMonth(new Date()),
         to: new Date(),
     });
@@ -59,4 +59,4 @@ const page = () => {
 };
 
 // Exporting our page
-export default page;
+export default Page;
