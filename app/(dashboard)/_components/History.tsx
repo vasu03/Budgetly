@@ -49,7 +49,8 @@ const History = ({ userSettings }: { userSettings: UserSettings }) => {
 
     // TSX to render the component
     return (
-        <div className="w-full flex flex-col gap-4 items-start justify-between py-2 px-3 md:px-6">
+        // <div className="md:w-full hidden md:flex md:flex-col md:gap-4 md:items-start md:justify-between md:py-2 md:px-6">
+        <div className="md:w-full hidden md:flex md:flex-col md:gap-4 md:items-start md:justify-between md:py-2 md:px-6">
             <h2 className="text-xl md:text-2xl dark:text-slate-100">History</h2>
                 <Card className="!w-full flex flex-col items-center justify-between gap-y-3 gap-x-0 border-none">
                     <CardHeader className="w-full p-0" >
@@ -79,8 +80,8 @@ const History = ({ userSettings }: { userSettings: UserSettings }) => {
                         <SkeletonWrapper isLoading={historyDataQuery.isFetching} fullWidth >
                             {/* If the data is available then show the chart */}
                             {isDataAvailable && (
-                                <ResponsiveContainer width={"100%"} className={"h-[300px] md:!h-[500px] p-0"}>
-                                    <BarChart height={500} data={historyDataQuery.data} barCategoryGap={5} >
+                                <ResponsiveContainer width={"100%"} className={"h-[300px] md:!h-[500px] p-0 w-full"}>
+                                    <BarChart height={500} width={600} data={historyDataQuery.data} barCategoryGap={5} >
                                         <defs>
                                             <linearGradient id="incomeBar" x1={"0"} y1={"0"} x2={"0"} y2={"1"} >
                                                 <stop offset={"0"} stopColor="#10b981" stopOpacity={"1"} />
